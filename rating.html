@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622230051">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<picture><source srcset="img/clinic-logo.webp" type="image/webp"><img src="img/clinic-logo.png" alt=""></picture>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="text-block">
+					<p>
+						<strong>На сколько вы оцените работу куратора внедрения?</strong>
+					</p>
+				</div>
+
+				<div class="curator">
+					<svg width="175" height="175" viewBox="20 20 175 175" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<pattern id="pcurator" width="100%" height="100%">
+							<image xlink:href="img/curator.png" width="129" height="129" preserveAspectRatio="xMidYMin slice"></image>
+						</pattern>
+						<path d="M68.6734 146.98C36.057 114.364 36.057 100.382 68.6734 67.766C101.29 35.1496 115.271 35.1496 147.888 67.766C180.504 100.382 180.504 114.364 147.888 146.98C115.271 179.596 101.29 179.596 68.6734 146.98Z" fill="url(#pcurator)" />
+						<path d="M54.1036 160.896C43.0458 149.839 34.7771 140.384 29.2738 131.736C23.7736 123.092 21.0527 115.28 21.0527 107.5C21.0527 99.7197 23.7736 91.9078 29.2738 83.2643C34.7771 74.6159 43.0458 65.1613 54.1036 54.1036C65.1613 43.0458 74.6159 34.7772 83.2643 29.2738C91.9078 23.7736 99.7197 21.0527 107.5 21.0527C115.28 21.0527 123.092 23.7736 131.736 29.2738C140.384 34.7772 149.839 43.0458 160.896 54.1036C171.954 65.1613 180.223 74.6159 185.726 83.2643C191.226 91.9078 193.947 99.7197 193.947 107.5C193.947 115.28 191.226 123.092 185.726 131.736C180.223 140.384 171.954 149.839 160.896 160.896C149.839 171.954 140.384 180.223 131.736 185.726C123.092 191.226 115.28 193.947 107.5 193.947C99.7197 193.947 91.9078 191.226 83.2643 185.726C74.6159 180.223 65.1613 171.954 54.1036 160.896Z" stroke="#F19C49" />
+					</svg>
+					<p>
+						<strong>Константиновская Александра,</strong>
+						куратор внедрения Zabota 2.0
+					</p>
+				</div>
+
+				<div class="form-block">
+
+					<form id="form">
+						<div class="rating">
+							<label class="checkbox red">1
+								<input type="radio" name="rating" />
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox red">2
+								<input type="radio" name="rating" />
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox red">3
+								<input type="radio" name="rating" />
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox yellow">4
+								<input type="radio" name="rating" />
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox yellow">5
+								<input type="radio" name="rating" />
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox yellow">6
+								<input type="radio" name="rating" />
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox yellow">7
+								<input type="radio" name="rating" />
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox green">8
+								<input type="radio" name="rating" />
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox green">9
+								<input type="radio" name="rating" />
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox green">10
+								<input type="radio" name="rating" />
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<p>
+							Что вы бы порекомендовали нам улучшить?
+						</p>
+						<textarea autocomplete="off" name="form[]" placeholder="" data-error="Ошибка" class="input"></textarea>
+						<button type="submit" class="button">Отправить</button>
+					</form>
+				</div>
+				<div class="links">
+					<a href="#" class="prev-link">Предыдущий этап</a>
+					<a href="#" class="next-link">Следующий этап</a>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<img src="img/logo.svg" alt="">
+				<div>
+					<p class="footer__text">Сервис предоставлен компанией Zabota 2.0</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__container">
+				<div class="popup__content">
+					<div class="popup__text">
+						<div class="text-block">
+							<p><strong>Спасибо за ваш ответ!</strong></p>
+							<p>
+								Мы его получили и при необходимости обязательно с вами свяжемся!
+							</p>
+						</div>
+					</div>
+					<img class="popup__logo" src="img/logo.svg" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230622230051"></script>
+</body>
+
+</html>

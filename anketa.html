@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622230051">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<picture><source srcset="img/clinic-logo.webp" type="image/webp"><img src="img/clinic-logo.png" alt=""></picture>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="text-block text-block__button">
+					<h2>Пожалуйста, ответьте на несколько вопросов</h2>
+					<p>Это поможет нам стать лучше</p>
+				</div>
+
+				<div class="form-block">
+					<form id="form">
+						<div class="text-block text-block__button">
+							<h4>
+								После завершения приема есть ли у Вас хорошее понимание Вашей
+								ситуации и дальнейших действий?
+							</h4>
+							<div class="question-block">
+								<label class="checkbox-small green">Я хотел бы уточнить некоторые вопросы
+									<input type="radio" name="anketa1" />
+									<span class="checkmark"></span>
+								</label>
+								<label class="checkbox-small green">Да
+									<input type="radio" name="anketa1" />
+									<span class="checkmark"></span>
+								</label>
+								<label class="checkbox-small red">Нет
+									<input type="radio" name="anketa1" />
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="text-block">
+							<h4>
+								Подробно ли Вас сориентировал доктор по плану лечения и его
+								стоимости?
+							</h4>
+							<div class="question-block">
+								<label class="checkbox-small green">Я хотел бы уточнить некоторые вопросы
+									<input type="radio" name="anketa2" />
+									<span class="checkmark"></span>
+								</label>
+								<label class="checkbox-small green">Да
+									<input type="radio" name="anketa2" />
+									<span class="checkmark"></span>
+								</label>
+								<label class="checkbox-small red">Нет
+									<input type="radio" name="anketa2" />
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="text-block">
+							<h4>
+								Подробно ли Вас сориентировал доктор по плану лечения и его
+								стоимости?
+							</h4>
+							<div class="question-block">
+								<label class="checkbox-small green">Я хотел бы уточнить некоторые вопросы
+									<input type="radio" name="anketa3" />
+									<span class="checkmark"></span>
+								</label>
+								<label class="checkbox-small green">Да
+									<input type="radio" name="anketa3" />
+									<span class="checkmark"></span>
+								</label>
+								<label class="checkbox-small red">Нет
+									<input type="radio" name="anketa3" />
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="text-block">
+							<h4>
+								Что Вам особенно понравилось, а что, на Ваш взгляд, нам нужно
+								улучшить в своей работе?
+							</h4>
+							<textarea autocomplete="off" name="form[]" placeholder="" data-error="Ошибка" class="input"></textarea>
+						</div>
+
+						<div class="text-block">
+							<h4>Общее впечатление</h4>
+							<div class="slidecontainer">
+								<input type="range" min="1" max="5" value="4" class="slider" id="sliderrange" />
+							</div>
+							<div class="sliderresults">
+								<span id="slideroutput"></span><picture><source srcset="img/smile4.webp" type="image/webp"><img id="smile" class="slider-img" src="img/smile4.png"></picture>
+							</div>
+						</div>
+
+						<div class="text-block button-block">
+							<button type="submit" class="button button__success">
+								Готово
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<img src="img/logo.svg" alt="">
+				<div>
+					<p class="footer__text">Сервис предоставлен компанией Zabota 2.0</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__container">
+				<div class="popup__content">
+					<div class="popup__text">
+						<div class="text-block">
+							<p><strong>Спасибо за ваш ответ!</strong></p>
+							<p>
+								Мы его получили и при необходимости обязательно с вами свяжемся!
+							</p>
+						</div>
+					</div>
+					<img class="popup__logo" src="img/logo.svg" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230622230051"></script>
+</body>
+
+</html>
